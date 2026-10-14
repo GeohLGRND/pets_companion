@@ -14,10 +14,25 @@ body {
 
 
 
+/* header {
+
+    background-color: aquamarine;
+} */
+
+
+header svg{
+    width: 20px;
+}
+
+
 /* ===== TELA DIVIDIDA EM DOIS LADOS ===== */
 .tela {
   display: flex;
   min-height: 100vh;
+}
+
+.tela img{
+    
 }
 
 .lado-esquerdo,
