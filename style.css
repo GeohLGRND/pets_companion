@@ -1,0 +1,152 @@
+
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0e3a5b;
+}
+
+
+
+
+/* ===== TELA DIVIDIDA EM DOIS LADOS ===== */
+.tela {
+  display: flex;
+  min-height: 100vh;
+}
+
+.lado-esquerdo,
+.lado-direito {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* ===== LADO ESQUERDO ===== */
+.lado-esquerdo {
+  position: relative;
+  overflow: hidden;
+  background-color: #f4ece3;
+  text-align: center;
+}
+
+.boas-vindas h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.boas-vindas p {
+  font-size: 14px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* Patinhas decorativas nos cantos */
+.pata {
+  position: absolute;
+  font-size: 90px;
+  opacity: 0.4;
+  filter: grayscale(1);
+}
+
+.pata-cima {
+  top: 10px;
+  right: 10px;
+}
+
+.pata-baixo {
+  bottom: 10px;
+  left: 10px;
+  font-size: 120px;
+}
+
+/* ===== LADO DIREITO ===== */
+.lado-direito {
+  background-color: #fff6f0;
+}
+
+.formulario {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.formulario h1 {
+  font-size: 32px;
+}
+
+.formulario input {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f4ece3;
+  font-size: 13px;
+  color: #0e3a5b;
+}
+
+.formulario button {
+  align-self: center;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 12px;
+  background-color: #0e3a5b;
+  color: #e0a526;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #0a2c46;
+}
+
+/* ===== RESPONSIVO ===== */
+
+/* Celular e tablet: os lados ficam um embaixo do outro */
+@media (max-width: 700px) {
+  .tela {
+    flex-direction: column;
+  }
+
+  .lado-esquerdo {
+    padding: 60px 20px;
+  }
+
+  .pata {
+    font-size: 60px;
+  }
+
+  .pata-baixo {
+    font-size: 80px;
+  }
+
+  .lado-direito {
+    padding: 40px 20px;
+  }
+}
+
+
+/* :root{
+
+     --corPrincpal: #FFF8F2;
+    --fontHanken: "Hanken Grotesk", sans-serif;
+    --corDourado: #FDBF49;
+    --corSecundaria: #0F3B59;
+    --corTerciaria: #f4ede4;
+}
+
+
+.container{
+    background-color: var(--corTerciaria);
+    height: 945px;
+    width: 56%;
+} */
