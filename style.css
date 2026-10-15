@@ -12,16 +12,46 @@ body {
 }
 
 
+/* ===== CABEÇALHO ===== */
+.header {
+  background-color: #cfc0ae;
+  gap: 20px;
+  padding: 0 167px;
+  height: 80px;
+}
 
+.mover{
+  padding-top: 13px;
 
-/* header {
+}
 
-    background-color: aquamarine;
-} */
+.logo {
+  width: 53px;
+  height: 53px;
+  background-color: #0e3a5b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+img{
+  height: 27px;
+}
 
-header svg{
-    width: 20px;
+.busca {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f6ede4;
+}
+
+.menu a {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 
@@ -31,9 +61,6 @@ header svg{
   min-height: 100vh;
 }
 
-.tela img{
-    
-}
 
 .lado-esquerdo,
 .lado-direito {
@@ -119,6 +146,52 @@ header svg{
   font-weight: bold;
   cursor: pointer;
 }
+
+
+/*  FOOTER (RODAPÉ) */
+.main-footer {
+    background-color: #F4EFE6;
+    padding: 40px 20px 20px 20px;
+    border-top: 1px solid #EAE5DD;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-nav h4 { 
+    margin-bottom: 10px; 
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #607274;
+}
+
+.footer-nav a:hover {
+    color: #1A3038;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #888;
+}
+
+
+
 
 .formulario button:hover {
   background-color: #0a2c46;
